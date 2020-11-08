@@ -22,9 +22,7 @@ const EmployeeTable = ()=> {
                 }))
             })
             .catch(err => console.log(err))}
-        } 
-        , [employees]
-        );
+        });
 
     const handleOnClick = event => {
         setEmployees(employees.concat().sort((a, b) => a[event.target.name].toLowerCase().localeCompare(b[event.target.name].toLowerCase())));
